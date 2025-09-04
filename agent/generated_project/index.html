@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColorfulTodo - Your Colorful Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app" class="theme-light">
+        <header>
+            <h1>ColorfulTodo</h1>
+            <button id="theme-toggle" aria-label="Toggle theme">🌓</button>
+        </header>
+        <section class="new-task">
+            <input id="new-task-input" type="text" placeholder="What needs to be done?" autocomplete="off">
+            <button id="add-task-btn">Add</button>
+        </section>
+        <ul id="task-list" class="task-list"></ul>
+        <footer>
+            <div class="filters">
+                <button data-filter="all" class="filter-btn active">All</button>
+                <button data-filter="active" class="filter-btn">Active</button>
+                <button data-filter="completed" class="filter-btn">Completed</button>
+            </div>
+            <button id="clear-completed">Clear Completed</button>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

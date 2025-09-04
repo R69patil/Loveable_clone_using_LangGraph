@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Todo App</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <!-- Main Todo Application Container -->
+    <div class="todo-app">
+        <!-- Header with App Name -->
+        <h1>Simple Todo App</h1>
+
+        <!-- Input Section: New Todo Text and Add Button -->
+        <div class="input-section">
+            <input id="new-todo" type="text" placeholder="What needs to be done?" autocomplete="off">
+            <button id="add-btn">Add</button>
+        </div>
+
+        <!-- Todo List Container (populated by JavaScript) -->
+        <ul id="todo-list" class="todo-list"></ul>
+
+        <!-- Footer with Filter Controls -->
+        <div class="filters">
+            <button data-filter="all" class="filter-btn active">All</button>
+            <button data-filter="active" class="filter-btn">Active</button>
+            <button data-filter="completed" class="filter-btn">Completed</button>
+        </div>
+    </div>
+
+    <!-- Message for users with JavaScript disabled -->
+    <noscript>
+        <p>Please enable JavaScript to use the Simple Todo App.</p>
+    </noscript>
+</body>
+</html>
